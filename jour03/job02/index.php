@@ -21,7 +21,7 @@
             <img id="5" src="img/arc5.png" alt="">
             <img id="6" src="img/arc6.png" alt="">
         </div>
-        <div id="rangees">
+        <div id="rangees" class="clic">
 
         </div>
     </main>
