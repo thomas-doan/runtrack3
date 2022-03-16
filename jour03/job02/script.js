@@ -7,7 +7,7 @@ $(document).ready(function() {
     let img5 = $("#img5");
     let img6 = $("#img6");
 
-    let resultatvalide = [1, 2, 3, 4, 5, 6];
+    let resultatvalide = ["1", "2", "3", "4", "5", "6"];
     let result = [];
 
     btn.click(function() {
@@ -24,22 +24,25 @@ $(document).ready(function() {
 
     $("img").on("click", function() {
         let valeur = $(this).attr("id");
+
         result.push($(this).attr("id"));
+
         let range = $("#rangees");
         $("#rangees").append($("#" + valeur));
+        console.log(result);
 
-        return result;
-    });
-
-    if (result.length == 6) {
-        for (let i = 0; i < result.length; i++) {
-            for (let j = 0; j < resultatvalide.length; j++) {
-                if (result[i] == resultatvalide[j]) {
-                    console.log("victoire");
-                } else {
-                    console.log("non");
-                }
+        if (result.length == 6) {
+            if (JSON.stringify(result) == JSON.stringify(resultatvalide)) {
+                let div = document.querySelector(".container");
+                let p = document.createElement("p");
+                p.textContent = "vous avez gagné";
+                div.appendChild(p);
+            } else {
+                let div = document.querySelector(".container");
+                let p = document.createElement("p");
+                p.textContent = "vous avez perdu";
+                div.appendChild(p);
             }
         }
-    }
+    });
 });

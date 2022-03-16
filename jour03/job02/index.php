@@ -11,6 +11,7 @@
 
 <body>
     <main>
+        <div class="container"></div>
         <button id="button">Mélanger</button>
         <div id="melangees">
             <img id="1" src="img/arc1.png" alt="">
