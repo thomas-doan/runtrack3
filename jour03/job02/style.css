@@ -1,0 +1,13 @@
+#melangees {
+    display: flex;
+    flex-direction: row;
+}
+
+#rangees {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    margin: 0.125rem;
+}
