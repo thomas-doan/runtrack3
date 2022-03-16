@@ -12,15 +12,16 @@
 <body>
     <main>
         <button id="button">Mélanger</button>
-        <div id="rangees">
-        </div>
         <div id="melangees">
-            <div id="img1"><img src="img/arc1.png" alt=""></div>
-            <div id="img2"><img src="img/arc2.png" alt=""></div>
-            <div id="img3"><img src="img/arc3.png" alt=""></div>
-            <div id="img4"><img src="img/arc4.png" alt=""></div>
-            <div id="img5"><img src="img/arc5.png" alt=""></div>
-            <div id="img6"><img src="img/arc6.png" alt=""></div>
+            <img id="1" src="img/arc1.png" alt="">
+            <img id="2" src="img/arc2.png" alt="">
+            <img id="3" src="img/arc3.png" alt="">
+            <img id="4" src="img/arc4.png" alt="">
+            <img id="5" src="img/arc5.png" alt="">
+            <img id="6" src="img/arc6.png" alt="">
+        </div>
+        <div id="rangees">
+
         </div>
     </main>
 </body>

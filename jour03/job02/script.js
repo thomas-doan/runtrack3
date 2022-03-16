@@ -7,6 +7,10 @@ $(document).ready(function() {
     let img5 = $("#img5");
     let img6 = $("#img6");
 
+    let resultatvalide = [1, 2, 3, 4, 5];
+    let result = [];
+
+    console.log($("#rangees")[0]);
     btn.click(function() {
         $(function() {
             var parent = $("#melangees");
@@ -18,22 +22,10 @@ $(document).ready(function() {
             }
         });
     });
-    img1.click(function() {
-        jQuery("#img1").detach().appendTo("#rangees");
-    });
-    img2.click(function() {
-        jQuery("#img2").detach().appendTo("#rangees");
-    });
-    img3.click(function() {
-        jQuery("#img3").detach().appendTo("#rangees");
-    });
-    img4.click(function() {
-        jQuery("#img4").detach().appendTo("#rangees");
-    });
-    img5.click(function() {
-        jQuery("#img5").detach().appendTo("#rangees");
-    });
-    img6.click(function() {
-        jQuery("#img6").detach().appendTo("#rangees");
+
+    $("img").on("click", function() {
+        let valeur = $(this).attr("id");
+        let range = $("#rangees");
+        $("#rangees").append($("#" + valeur));
     });
 });
