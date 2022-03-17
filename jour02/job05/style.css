@@ -1,0 +1,11 @@
+body {
+    min-height: 4096px;
+}
+
+footer {
+    --couleur: rgb(255, 38, 0);
+    top: 85vh;
+    position: fixed;
+    width: 100%;
+    background: var(--couleur);
+}

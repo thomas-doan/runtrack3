@@ -1,13 +1,8 @@
-document.addEventListener("DOMContentLoaded", (e) => {
-    const textarea = document.getElementById("keylogger");
+document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("scroll", (e) => {
+        var footer = document.querySelector("footer");
+        let pourcent = Math.round((100 * window.scrollY) / 4096);
 
-    document.addEventListener("keydown", (event) => {
-        if (textarea.focus) {
-            var letter2 = event.key;
-            textarea.value = textarea.value + letter2;
-        } else {
-            var letter = event.key;
-            textarea.value = textarea.value + letter;
-        }
+        footer.setAttribute("style", "--couleur:#FF" + pourcent + pourcent);
     });
 });

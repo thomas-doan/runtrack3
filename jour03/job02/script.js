@@ -17,12 +17,13 @@ $(document).ready(function() {
 
     $("img").on("click", function() {
         let valeur = $(this).attr("id");
-
+        let test = document.querySelector("#rangees");
+        let array = Array.from(test.children);
+        console.log(array);
         result.push($(this).attr("id"));
 
         let range = $("#rangees");
         $("#rangees").append($("#" + valeur));
-        console.log(result);
 
         if (result.length == 6) {
             if (JSON.stringify(result) == JSON.stringify(resultatvalide)) {
@@ -39,7 +40,7 @@ $(document).ready(function() {
                 $("p").css("color", "red");
             }
 
-            $(this).removeClass("clic");
+            $("img").off("click");
         }
     });
 });
