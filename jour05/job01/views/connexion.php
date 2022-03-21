@@ -1,5 +1,4 @@
 <?php
-require_once(__DIR__ . '/../Controllers/ConnexionController.php');
 
 session_start();
 
@@ -34,14 +33,16 @@ session_start();
 
         <section>
             <h2>connexion</h2>
+            <?php var_dump($_SESSION['user']) ?>
+            <p class="erreur"></p>
 
-            <form action="" method="post">
+            <form action="" method="post" id="connexion_form">
 
-                <input type="text" name="email" placeholder="Email" autocomplete="off">
+                <input class="email" type="text" name="email" placeholder="Email" autocomplete="off">
 
-                <input type="password" name="password" placeholder="Votre mot de passe" autocomplete="off">
+                <input class="password" type="password" name="password" placeholder="Votre mot de passe" autocomplete="off">
 
-                <button type="button">Valider</button>
+                <button id="valid_connexion" type="button">Valider</button>
 
             </form>
         </section>

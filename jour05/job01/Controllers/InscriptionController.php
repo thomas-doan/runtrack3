@@ -1,13 +1,18 @@
 <?php
+session_start();
 require_once '../Model/UserModel.php';
 
-$datas = file_get_contents('php://input');
+/* $datas = file_get_contents('php://input');
 
-echo $datas;
+echo $datas; */
 
 
 
-if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['password'], $_POST['confirm'])) {
+if (
+    isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['password'], $_POST['confirm']) &&
+    !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['password'])
+) {
+
 
     $nom = strip_tags($_POST['nom']);
     $prenom = strip_tags($_POST['prenom']);
@@ -30,8 +35,6 @@ if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['password'], 
                     0 => 'Votre inscription est enregitrer'
                 )
             ];
-
-            echo json_encode($gestion_erreur);
         } else {
 
             $gestion_erreur = [
@@ -39,17 +42,25 @@ if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['password'], 
                     0 => 'les mots de passe sont differents'
                 )
             ];
-
-            echo json_encode($gestion_erreur);
         }
+        echo json_encode($gestion_erreur);
     } else {
 
         $gestion_erreur = [
             array(
-                0 => 'Le mail existe déja'
+                0 => 'Le mail existe deja'
             )
         ];
 
         echo json_encode($gestion_erreur);
     }
+} else {
+
+    $gestion_erreur = [
+        array(
+            0 => 'Les champs sont vides'
+        )
+    ];
+
+    echo json_encode($gestion_erreur);
 }

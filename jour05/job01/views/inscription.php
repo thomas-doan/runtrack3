@@ -1,5 +1,4 @@
 <?php
-require_once(__DIR__ . '/../Controllers/InscriptionController.php');
 
 session_start();
 
@@ -33,17 +32,18 @@ session_start();
         <section>
 
             <h2>Inscription</h2>
-            <p id="erreur"></p>
+
+            <p class="erreur"></p>
 
             <form action="" method="post" id="inscription">
 
-                <input id="prenom" type="text" name="prenom" placeholder="Prenom" autocomplete="off">
+                <input class="prenom" type="text" name="prenom" placeholder="Prenom" autocomplete="off">
 
-                <input id="nom" type="text" name="nom" placeholder="Nom" autocomplete="off">
+                <input class="nom" type="text" name="nom" placeholder="Nom" autocomplete="off">
 
-                <input id="email" type="text" name="email" placeholder="Email" autocomplete="off">
+                <input class="email" type="text" name="email" placeholder="Email" autocomplete="off">
 
-                <input id="password" type="password" name="password" placeholder="Votre mot de passe" autocomplete="off">
+                <input class="password" type="password" name="password" placeholder="Votre mot de passe" autocomplete="off">
 
                 <input type="password" name="confirm" placeholder="Votre mot de passe" autocomplete="off">
 
