@@ -10,8 +10,6 @@ if (!empty($_POST) && isset($_POST['email'], $_POST['password']) && !empty($_POS
     $utilisateur = new UserModel();
     $exist = $utilisateur->findByEmail($email);
 
-    var_dump($exist);
-
     if ($exist) {
 
         if (password_verify($password, $exist[0]['password'])) {
@@ -29,8 +27,9 @@ if (!empty($_POST) && isset($_POST['email'], $_POST['password']) && !empty($_POS
             $_SESSION['message'] = 'Connexion reussi';
 
             $gestion_erreur = [
-                array(
-                    0 => 'Connexion reussi',
+                "valide" =>  array(
+                    0 => '1',
+
 
                 )
             ];
@@ -38,9 +37,9 @@ if (!empty($_POST) && isset($_POST['email'], $_POST['password']) && !empty($_POS
             echo json_encode($gestion_erreur);
         } else {
             $gestion_erreur = [
-                array(
+                "error" =>  array(
                     0 => 'les mots de passe sont differents',
-                    1 => 'email valide'
+                    1 => 'email non valide'
                 )
             ];
 
@@ -49,8 +48,9 @@ if (!empty($_POST) && isset($_POST['email'], $_POST['password']) && !empty($_POS
     } else {
 
         $gestion_erreur = [
-            array(
-                0 => 'Mot de passe ou email incorrect'
+            "error" =>  array(
+                0 => 'Mot de passe ou email incorrect',
+                1 => 'email incorrect'
             )
         ];
 

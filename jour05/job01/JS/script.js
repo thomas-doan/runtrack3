@@ -100,16 +100,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
         valid_connexion.addEventListener("click", function() {
             let formData = new FormData(formConnexion);
 
-            console.log(formData);
-
             fetch("../Controllers/ConnexionController.php", {
                     method: "POST",
                     body: formData,
                 })
-                .then((response) => response.text())
-                .then((data) => {
-                    console.log(data);
-                });
+                .then((response) => response.json())
+
+            .then((response) => {
+                console.log(response);
+
+                if (response.hasOwnProperty("valide")) {
+                    window.location.replace("./index.php");
+                }
+
+                if (response.hasOwnProperty("error")) {
+                    for (let i = 0; i < response.error.length; i++) {
+                        console.log(response.error[i]);
+                    }
+                }
+            });
         });
     }
 });

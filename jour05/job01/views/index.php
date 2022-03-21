@@ -29,7 +29,7 @@ if (!isset($_SESSION['user'])) {
         <nav>
             <ul class="navigation">
                 <li><a href="./index.php">Index</a></li>
-                <li><a href="./inscription.php">Inscription</a></li>
+
             </ul>
         </nav>
     </header>
