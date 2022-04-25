@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-
 <body>
-    <header>
+<header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">LPTF</a>
@@ -68,9 +65,7 @@
                 </div>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination mt-4 justify-content-end">
-                        <li class="page-item"><a class="page-link" href="#">
-                                << </a>
-                        </li>
+                        <li class="page-item"><a class="page-link" href="#"><<</a></li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -84,82 +79,62 @@
                     <ul class="nav nav-pills flex-column mb-auto">
                         <li class="nav-item ">
                             <a href="#" class="nav-link active" aria-current="page">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#home"></use>
-                                </svg>
-                                Limbes
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                            Limbes
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#speedometer2"></use>
-                                </svg>
-                                Luxure
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                            Luxure
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#table"></use>
-                                </svg>
-                                Gourmandise
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                            Gourmandise
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#grid"></use>
-                                </svg>
-                                Avarice
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                            Avarice
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                Colere
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                            Colere
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                Heresie
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                            Heresie
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                Violence
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                            Violence
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                Ruse et Tromperie
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                            Ruse et Tromperie
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark border-bottom">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                Trahison
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                            Trahison
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                Internet explorer
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                            Internet explorer
                             </a>
                         </li>
                     </ul>
@@ -223,5 +198,4 @@
         </div>
     </main>
 </body>
-
 </html>
