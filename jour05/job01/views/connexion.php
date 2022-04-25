@@ -36,13 +36,13 @@ session_start();
             <?php var_dump($_SESSION['user']) ?>
             <p class="erreur"></p>
 
-            <form action="" method="post" id="connexion_form">
+            <form action="../Controllers/ConnexionController.php" method="post" id="connexion_form">
 
                 <input class="email" type="text" name="email" placeholder="Email" autocomplete="off">
 
                 <input class="password" type="password" name="password" placeholder="Votre mot de passe" autocomplete="off">
 
-                <button id="valid_connexion" type="button">Valider</button>
+                <button id="valid_connexion" type="submit">Valider</button>
 
             </form>
         </section>

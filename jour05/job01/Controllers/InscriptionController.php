@@ -31,14 +31,14 @@ if (
             $insert = $utilisateur->register($nom, $prenom, $email, $password);
 
             $gestion_erreur = [
-                array(
-                    0 => 'Votre inscription est enregitrer'
+                "valide" =>  array(
+                    0 => '1',
                 )
             ];
         } else {
 
             $gestion_erreur = [
-                array(
+                "error" =>  array(
                     0 => 'les mots de passe sont differents'
                 )
             ];
@@ -47,7 +47,7 @@ if (
     } else {
 
         $gestion_erreur = [
-            array(
+            "error" =>  array(
                 0 => 'Le mail existe deja'
             )
         ];
@@ -57,7 +57,7 @@ if (
 } else {
 
     $gestion_erreur = [
-        array(
+        "error" => array(
             0 => 'Les champs sont vides'
         )
     ];

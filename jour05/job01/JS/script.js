@@ -90,8 +90,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
                     body: formData,
                 })
                 .then((response) => response.json())
-                .then((data) => {
-                    console.log(data);
+                .then((response) => {
+                    if (response.hasOwnProperty("valide")) {
+                        window.location.replace("./index.php");
+                    }
+
+                    if (response.hasOwnProperty("error")) {
+                        for (let i = 0; i < response.error.length; i++) {
+                            console.log(response.error[i]);
+                        }
+                    }
                 });
         });
     }

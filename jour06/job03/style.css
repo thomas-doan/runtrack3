@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    background: #88c1d0;
+    width: 50vw;
+    height: 150px;
+    margin: 20px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1599px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .section {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .section {
+        width: 20%;
+    }
+    body {
+        flex-direction: row;
+        justify-content: space-around
+    }
+}

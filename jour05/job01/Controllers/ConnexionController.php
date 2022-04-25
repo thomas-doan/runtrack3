@@ -35,6 +35,7 @@ if (!empty($_POST) && isset($_POST['email'], $_POST['password']) && !empty($_POS
             ];
 
             echo json_encode($gestion_erreur);
+            header('location: ../views/index.php');
         } else {
             $gestion_erreur = [
                 "error" =>  array(

@@ -35,7 +35,7 @@ session_start();
 
             <p class="erreur"></p>
 
-            <form action="" method="post" id="inscription">
+            <form action="../Controllers/InscriptionController.php" method="post" id="inscription">
 
                 <input class="prenom" type="text" name="prenom" placeholder="Prenom" autocomplete="off">
 
@@ -48,7 +48,7 @@ session_start();
                 <input type="password" name="confirm" placeholder="Votre mot de passe" autocomplete="off">
 
 
-                <button id="validation" type="button" name="submit">Valider</button>
+                <button id="validation" type="submit" name="submit">Valider</button>
             </form>
 
             </div>
